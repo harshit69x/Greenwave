@@ -2,7 +2,7 @@ import React from 'react'
 
 function Gallery() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-100 p-4" id="gallery">
       <h1 className="text-4xl font-bold mb-6">Gallery</h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 max-w-full place-items-center">
         <img className="w-full h-auto hover:opacity-75" src="https://source.unsplash.com/collection/1346951/300x300?sig=1" alt="Gallery item 1"/>

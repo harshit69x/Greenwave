@@ -1,7 +1,19 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+import ContactUs from "./ContactUs";
+import Services from "./Services";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  const menuItems = [
+    { id: 1, title: "Home", to: "home" },
+    { id: 2, title: "Features", to: "features" },
+    { id: 3, title: "Services", to: "services" },
+    { id: 3, title: "Contact", to: "contact" },
+    { id: 3, title: "Gallery", to: "gallery" },
+    
+  ];
 
   return (
     <header className="bg-white">
@@ -37,9 +49,17 @@ function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-lg font-semibold leading-6 text-black">Features</a>
-          <a href="#" className="text-lg font-semibold leading-6 text-black">Services</a>
-          <a href="#" className="text-lg font-semibold leading-6 text-black">Contact Us</a>
+          {menuItems.map((menu) => (
+            <Link
+              key={menu.id}
+              to={menu.to}
+              className="text-lg font-semibold leading-6 text-black"
+              smooth={true}
+              duration={700}
+            >
+              {menu.title}
+            </Link>
+          ))}
         </div>
       </nav>
 
@@ -77,9 +97,18 @@ function Header() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                  <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                  {menuItems.map((menu) => (
+                    <Link
+                      key={menu.id}
+                      to={menu.to}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      smooth={true}
+                      duration={500}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {menu.title}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>

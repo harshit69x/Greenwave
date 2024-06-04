@@ -2,9 +2,9 @@ import React from 'react'
 
 function Features() {
   return (
-    <section className="m-4 md:m-8 dark dark:text-gray-800">
-	<div className="container mx-auto p-4 my-6 space-y-2 text-center">
-		<h2 className="text-4xl font-bold">Features</h2>
+    <section className="m-4 md:m-8 dark dark:text-gray-800" id="features">
+	<div className="container mx-auto p-4 my-6 space-y-2 text-center" id ='a'>
+		<h2 className="text-4xl font-bold" id="featureHeader">Features</h2>
 	</div>
 	<div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
 		<div className="flex flex-col items-center p-4">

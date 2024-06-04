@@ -24,7 +24,7 @@ const BackgroundImageComponent = () => {
   }, []);
 
   return (
-    <div
+    <div id="home"
       className="relative w-full h-screen bg-cover bg-center md:bg-fixed"
       style={{
         backgroundImage: `url('${backgroundImage}')`

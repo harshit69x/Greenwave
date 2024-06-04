@@ -2,7 +2,7 @@ import React from 'react'
 
 function ContactUs() {
   return (
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-white dark:bg-gray-900" id="contact">
     <div class="container px-6 py-12 mx-auto">
         <div class="text-center">
             <p class="font-medium text-blue-500 dark:text-blue-400">Contact us</p>
@@ -35,7 +35,7 @@ function ContactUs() {
                 
                 <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Office</h2>
                 <p class="mt-2 text-gray-500 dark:text-gray-400">Come say hello at our office HQ.</p>
-                <p class="mt-2 text-blue-500 dark:text-blue-400">100 Smith Street Collingwood VIC 3066 AU</p>
+                <p class="mt-2 text-blue-500 dark:text-blue-400"><a href='https://maps.app.goo.gl/CLWyDSVFe6Smpyya6' target='./'>123,PVR Building, 5th cross,Vittal Nagar ,ISRO Layout,Bangalore 560078</a></p>
             </div>
 
             <div class="flex flex-col items-center justify-center text-center">
@@ -47,7 +47,7 @@ function ContactUs() {
                 
                 <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Phone</h2>
                 <p class="mt-2 text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm.</p>
-                <p class="mt-2 text-blue-500 dark:text-blue-400">(+91)9972992611</p>
+                <p class="mt-2 text-blue-500 dark:text-blue-400">(+91)9886857845</p>
             </div>
         </div>
     </div>
